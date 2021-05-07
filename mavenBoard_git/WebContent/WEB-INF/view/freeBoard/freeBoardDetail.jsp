@@ -106,7 +106,7 @@
 					<td style="width: 400px;">
 						<select id="codeType" name="codeType" >
 							<c:forEach var="codeOne" items="${cType }">
-								<option value="${codeOne.CODE }"<c:if test="${freeBoardDto.codeType=='1' }">selected</c:if>>${codeOne.CODE_NAME}</option>
+								<option value="${codeOne.CODE }"<c:if test="${freeBoardDto.codeType==codeOne.CODE}">selected</c:if>>${codeOne.CODE_NAME}</option>
 							</c:forEach>
 						</select>
 					</td>
